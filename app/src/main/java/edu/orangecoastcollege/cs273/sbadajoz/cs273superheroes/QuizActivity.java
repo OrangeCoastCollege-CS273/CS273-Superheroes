@@ -17,8 +17,7 @@ public class QuizActivity extends AppCompatActivity {
 
     private static final int FLAGS_IN_QUIZ = 10;
 
-    private Button[] mButtons = new Button[8];
-    private LinearLayout[] mLayouts = new LinearLayout[4];
+    private Button[] mButtons = new Button[4];
     private List<SuperHero> mAllSuperHeroes;
     private List<SuperHero> mQuizSuperHeroes;
     private SuperHero mCorrect;
@@ -34,7 +33,7 @@ public class QuizActivity extends AppCompatActivity {
     private int mChoices;
     private String mRegion;
 
-    public static final String CHOICES = "pref_quizType";
+    public static final String QUIZ_TYPE = "pref_quizType";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
