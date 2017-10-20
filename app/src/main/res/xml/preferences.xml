@@ -8,7 +8,6 @@
         android:title="@string/number_of_choices"
         android:summary="@string/number_of_choices_description"
         android:persistent="true"
-        android:defaultValue="Superhero Name"
+        android:defaultValue="@string/default_quiz_type"
         />
-
 </PreferenceScreen>
