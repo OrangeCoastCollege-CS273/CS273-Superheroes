@@ -2,22 +2,13 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <ListPreference
-        android:entries="@array/guesses_list"
-        android:entryValues="@array/guesses_list"
-        android:key="pref_numberOfChoices"
+        android:entries="@array/quiz_types"
+        android:entryValues="@array/quiz_types"
+        android:key="pref_quizType"
         android:title="@string/number_of_choices"
         android:summary="@string/number_of_choices_description"
         android:persistent="true"
-        android:defaultValue="4"
-        />
-    <ListPreference
-        android:entries="@array/regions_list"
-        android:entryValues="@array/regions_list"
-        android:key="pref_regions"
-        android:title="@string/world_regions"
-        android:summary="@string/world_regions_description"
-        android:persistent="true"
-        android:defaultValue="All"
+        android:defaultValue="Superhero Name"
         />
 
 </PreferenceScreen>
