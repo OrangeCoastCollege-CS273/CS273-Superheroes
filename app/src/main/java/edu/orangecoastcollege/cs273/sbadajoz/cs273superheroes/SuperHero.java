@@ -4,14 +4,14 @@ package edu.orangecoastcollege.cs273.sbadajoz.cs273superheroes;
 public class SuperHero {
     private String mUserName;
     private String mName;
-    private String mSuperPower;
+    private String mSuperpower;
     private String mOneThing;
     private String mFileName;
 
-    public SuperHero(String userName, String name, String superPower, String oneThing) {
+    public SuperHero(String userName, String name, String superpower, String oneThing) {
         mUserName = userName;
         mName = name;
-        mSuperPower = superPower;
+        mSuperpower = superpower;
         mOneThing = oneThing;
         mFileName = userName + ".png";
     }
@@ -32,12 +32,12 @@ public class SuperHero {
         mName = name;
     }
 
-    public String getSuperPower() {
-        return mSuperPower;
+    public String getSuperpower() {
+        return mSuperpower;
     }
 
-    public void setSuperPower(String superPower) {
-        mSuperPower = superPower;
+    public void setSuperpower(String superpower) {
+        mSuperpower = superpower;
     }
 
     public String getOneThing() {
@@ -65,7 +65,7 @@ public class SuperHero {
 
         if (mUserName != null ? !mUserName.equals(superHero.mUserName) : superHero.mUserName != null) return false;
         if (mName != null ? !mName.equals(superHero.mName) : superHero.mName != null) return false;
-        if (mSuperPower != null ? !mSuperPower.equals(superHero.mSuperPower) : superHero.mSuperPower != null)
+        if (mSuperpower != null ? !mSuperpower.equals(superHero.mSuperpower) : superHero.mSuperpower != null)
             return false;
         if (mOneThing != null ? !mOneThing.equals(superHero.mOneThing) : superHero.mOneThing != null) return false;
         return mFileName != null ? mFileName.equals(superHero.mFileName) : superHero.mFileName == null;
@@ -76,7 +76,7 @@ public class SuperHero {
     public int hashCode() {
         int result = mUserName != null ? mUserName.hashCode() : 0;
         result = 31 * result + (mName != null ? mName.hashCode() : 0);
-        result = 31 * result + (mSuperPower != null ? mSuperPower.hashCode() : 0);
+        result = 31 * result + (mSuperpower != null ? mSuperpower.hashCode() : 0);
         result = 31 * result + (mOneThing != null ? mOneThing.hashCode() : 0);
         result = 31 * result + (mFileName != null ? mFileName.hashCode() : 0);
         return result;
@@ -87,7 +87,7 @@ public class SuperHero {
         return "SuperHero{" +
                 "UserName='" + mUserName + '\'' +
                 ", Name='" + mName + '\'' +
-                ", SuperPower='" + mSuperPower + '\'' +
+                ", SuperPower='" + mSuperpower + '\'' +
                 ", OneThing='" + mOneThing + '\'' +
                 ", FileName='" + mFileName + '\'' +
                 '}';
