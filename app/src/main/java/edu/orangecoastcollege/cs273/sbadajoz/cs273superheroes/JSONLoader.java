@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Class loads Country data from a formatted JSON (JavaScript Object Notation) file.
+ * Class loads Superhero data from a formatted JSON (JavaScript Object Notation) file.
  * Populates data model (Country) with data.
  */
 public class JSONLoader {
@@ -35,14 +35,11 @@ public class JSONLoader {
 
         try {
             JSONObject jsonRootObject = new JSONObject(json);
-            JSONArray allHeroesJSON = jsonRootObject.getJSONArray("Superheroes");
-
-            // TODO: Loop through all the countries in the JSON data, create a Country
-            // TODO: object for each and add the object to allSuperHeroes
+            JSONArray allHeroesJSON = jsonRootObject.getJSONArray("CS273Superheroes");
 
             for (int i = 0; i < allHeroesJSON.length(); i++) {
                 JSONObject countryJSON = allHeroesJSON.getJSONObject(i);
-                allSuperHeroes.add(new SuperHero(countryJSON.getString("Username"), countryJSON.getString("Name"), countryJSON.getString("Superpower"), countryJSON.getString("One Thing")));
+                allSuperHeroes.add(new SuperHero(countryJSON.getString("Username"), countryJSON.getString("Name"), countryJSON.getString("Superpower"), countryJSON.getString("OneThing")));
             }
 
 
